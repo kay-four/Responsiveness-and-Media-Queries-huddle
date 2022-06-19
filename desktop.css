@@ -6,7 +6,7 @@
 body{
     background-image:url('bg-hero-desktop.svg');
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 
@@ -23,4 +23,9 @@ header {
 }
 .btntry{
    align-content: flex-end;
+}
+footer{
+    display: flex;
+    flex-direction: row;
+
 }
