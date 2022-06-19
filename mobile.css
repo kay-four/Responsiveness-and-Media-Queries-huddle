@@ -1,0 +1,12 @@
+@media screen and (max-width:375px){
+
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        background-image:url('bg-hero-mobile.svg');
+        display: flex;
+        flex-direction: column;
+    }
+    }

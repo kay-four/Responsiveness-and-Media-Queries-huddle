@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url('bg-hero-desktop.svg');
+    display: flex;
+    flex-direction: row;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 2em;
+    
+}
+.logo{
+    align-self: start;
+    
+}
+.btntry{
+   align-content: flex-end;
+}
