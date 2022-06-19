@@ -13,6 +13,7 @@ display: flex;
 flex-direction: row;
 padding: 10px;
 justify-content: space-between;
+max-width: none;
 
 }
 .header, .mockups{
@@ -148,37 +149,17 @@ footer{
 background-color: hsl(192, 100%, 9%);
 color: white;
 display: flex;
-flex-direction: column;
+flex-direction: row;
 padding: 2em;
 }
 .contact{
 display: flex;
 flex-direction: column;
 }
-.lorem{
-display: flex;
-flex-direction: row;
+.contact img{
+    max-width: 30px;
 }
-.lorem img{
-justify-self: start;
-align-self: center;
-}
-.phone{
-display: flex;
-flex-direction: row;
-}
-.phone img{
-align-self: center;
-justify-self: center;
-}
-.email{
-display: flex;
-flex-direction: row;
-}
-.email img{
-align-self: center;
-justify-self: center;
-}
+
 .aboutus p{
 text-align: start;
 }
