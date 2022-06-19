@@ -8,24 +8,49 @@ body{
     display: flex;
     flex-direction: column;
 }
-
-
-header {
+.header {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    /* justify-items:flex-start; */
+    /* width: 100%; */
     padding: 2em;
+}
+.btntry{
+    justify-self: flex-end;
+}
+button{
+    border-radius: 30px;
+    border: transparent;
+    font-family: 'Open Sans',sans-serif;
+    padding: 10px;
     
 }
+
+.try{
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+}
+h2{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+p{
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 400;
+}
+.getStarted{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+}
+
+
 .logo{
     align-self: start;
     
 }
-.btntry{
-   align-content: flex-end;
-}
 footer{
     display: flex;
     flex-direction: row;
+    background-color: hsl(192, 100%, 9%);
 
 }

@@ -1,12 +1,133 @@
-@media screen and (max-width:375px){
-
-    *{
+*{
         margin: 0;
         padding: 0;
+ }
+body {
+      
+      
     }
-    body {
-        background-image:url('bg-hero-mobile.svg');
-        display: flex;
-        flex-direction: column;
-    }
-    }
+
+.header{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.header, .mockups{
+    background-image:url('bg-hero-mobile.svg');
+
+}
+.logo{
+    align-self: flex-end;
+}
+.btntry{
+    justify-self: flex-end;
+}
+.try{
+    background-color: white;
+    color: hsl(192, 100%, 9%);
+    border: none;
+    border-radius: 30px;
+    padding: 5px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+button{
+    border-radius: 30px;
+    border: transparent;
+    font-family: 'Open Sans',sans-serif;
+    padding: 10px;
+    
+}
+main{
+    display: flex;
+    place-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+main > div{
+    border: 1px solid hsl(193, 100%, 96%);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+h2,h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    padding: 20px;
+}
+p{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 20px;
+    align-self: center;
+}
+.mockups{
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+}
+.mockupsbtn{
+    place-items: center;
+
+}
+
+img{
+    max-width:375px;
+    max-height: 200px;
+    padding:1px;
+    /* object-fit:fill; */
+}
+.getStarted{
+    background-color: hsl(322, 100%, 66%);
+    color: hsl(193, 100%, 96%);
+    width: 50%;
+    margin: auto;
+    align-self: center;
+    justify-items: center;
+    padding: 10px;
+    font-weight: 700;
+}
+.growtogether{
+    flex:1;
+    display: flex;
+    padding: 20px;
+    flex-direction:column-reverse;
+    border: transparent;
+    box-shadow: pink;
+    border-radius: 10px;
+}
+.flowingconvo{
+    display: flex;
+    flex-direction: column;
+}
+.flowingconvo div{
+    padding:2em;
+}
+.yourusers{
+    flex:1;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-items: center;
+    align-items: center;
+}
+.yourusers div{
+    padding: 2em;
+}
+.buildcommunity{
+    flex: 1;
+    align-items: center;
+    justify-items: center;
+}
+
+footer{
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+    
