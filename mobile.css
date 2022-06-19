@@ -2,30 +2,56 @@
         margin: 0;
         padding: 0;
  }
-body {
-      
-      
-    }
+body{
+    text-align: center;
+    padding:20px;
+    margin:20px;
+}
 
 .header{
     display: flex;
     flex-direction: row;
     padding: 10px;
+    justify-content: space-between;
+    
 }
 .header, .mockups{
     background-image:url('bg-hero-mobile.svg');
 
 }
+.therest{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border:1px solid  hsl(193, 100%, 96%);
+    box-shadow:5px 5px hsl(193, 100%, 96%);
+}
+.therest div{
+    padding: 20px;
+    margin: 20px;
+    border-radius: 20px;
+    border:1px solid  hsl(193, 100%, 96%);
+    box-shadow:5px 5px hsl(193, 100%, 96%);
+
+}
 .logo{
-    align-self: flex-end;
+    justify-self: start;
+    flex:2;
+    width: 50%;
+    max-width: 100px;
 }
 .btntry{
-    justify-self: flex-end;
+    width: 50%;
+    flex:1;
+    /* margin: auto; */
+    justify-self: end;
+    align-self: flex-end;
 }
 .try{
+    
     background-color: white;
     color: hsl(192, 100%, 9%);
-    border: none;
+    /* border: none; */
     border-radius: 30px;
     padding: 5px;
     font-family: 'Open Sans';
@@ -36,6 +62,7 @@ button{
     border: transparent;
     font-family: 'Open Sans',sans-serif;
     padding: 10px;
+    width: 100%;
     
 }
 main{
@@ -44,15 +71,11 @@ main{
     flex-direction: column;
     padding: 2em;
 }
-main > div{
-    border: 1px solid hsl(193, 100%, 96%);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
+
 h2,h3{
     font-family: 'Poppins',sans-serif;
     font-weight: 600;
+    margin: 20px;
     padding: 20px;
 }
 p{
@@ -67,9 +90,9 @@ p{
     padding: 20px;
     justify-content: center;
 }
-.mockupsbtn{
-    place-items: center;
-
+.mockups div{
+    padding: 20px;
+    margin:20px;
 }
 
 img{
@@ -92,7 +115,7 @@ img{
     flex:1;
     display: flex;
     padding: 20px;
-    flex-direction:column-reverse;
+    flex-direction:column;
     border: transparent;
     box-shadow: pink;
     border-radius: 10px;
@@ -107,21 +130,23 @@ img{
 .yourusers{
     flex:1;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     justify-items: center;
     align-items: center;
 }
-.yourusers div{
-    padding: 2em;
-}
+
 .buildcommunity{
     flex: 1;
-    align-items: center;
-    justify-items: center;
+    
+    border:0.5px solid gray;
+    border-radius: 20px;
+    height: 50%;
+    padding: 10px;
 }
 
 footer{
     background-color: hsl(192, 100%, 9%);
+    color: white;
     display: flex;
     flex-direction: column;
     padding: 2em;
@@ -130,4 +155,40 @@ footer{
     display: flex;
     flex-direction: column;
 }
-    
+.lorem{
+    display: flex;
+    flex-direction: row;
+}
+.lorem img{
+    justify-self: start;
+    align-self: center;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+}
+.phone img{
+    align-self: center;
+    justify-self: center;
+}
+.email{
+    display: flex;
+    flex-direction: row;
+}
+.email img{
+    align-self: center;
+    justify-self: center;
+}
+.aboutus p{
+    text-align: start;
+}
+.socials{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+}
+.socials img{
+    max-width: 30px;
+    padding: 10px;
+}
