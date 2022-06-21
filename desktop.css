@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
 body{
 text-align: center;
@@ -8,16 +9,31 @@ padding:20px;
 margin:20px;
 }
 
-.header{
+.mockups{
 display: flex;
 flex-direction: row;
 padding: 10px;
-justify-content: space-between;
-max-width: none;
+background-image:url('./bg-hero-desktop.svg');
 
 }
-.header, .mockups{
-background-image:url('bg-hero-desktop.svg');
+.mockups .logoside{
+    width: 50%;
+    margin: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.mockups .btnimgside{
+    width: 50%;
+    margin: auto;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.mockupsimg img{
+    max-width: 400px;
 
 }
 .therest{
@@ -27,32 +43,28 @@ border-radius: 20px;
 border:1px solid  hsl(193, 100%, 96%);
 box-shadow:5px 5px hsl(193, 100%, 96%);
 }
-.therest > div{
-padding: 20px;
-margin: 20px;
-border-radius: 20px;
-border:1px solid  hsl(193, 100%, 96%);
-box-shadow:5px 5px hsl(193, 100%, 96%);
 
-}
 .logo{
 justify-self: start;
-flex:2;
-width: 50%;
-max-width: 100px;
+flex:1;
+max-width: 80px;
 }
 .btntry{
 width: 50%;
 flex:1;
-/* margin: auto; */
-justify-self: end;
+margin: 10px;
+
 align-self: flex-end;
+justify-self: flex-end;
+
+
 }
 .try{
 
 background-color: white;
 color: hsl(192, 100%, 9%);
-/* border: none; */
+width: 50%;
+justify-self: flex-end;
 border-radius: 30px;
 padding: 5px;
 font-family: 'Open Sans';
@@ -86,26 +98,34 @@ font-weight: 400;
 padding: 20px;
 align-self: center;
 }
-.mockups{
+/* .mockups{
 flex: 1;
+display: flex;
+flex-direction: row;
 padding: 20px;
 justify-content: center;
-}
-.mockups div{
+} */
+/* .mockups div{
 padding: 20px;
 margin:20px;
 }
+.mockupstxt{
+    flex: 1;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+} */
 
-img{
-max-width:375px;
-max-height: 200px;
-padding:1px;
-/* object-fit:fill; */
-}
+/* .mockupsimg{
+    flex: 1;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+} */
 .getStarted{
 background-color: hsl(322, 100%, 66%);
 color: hsl(193, 100%, 96%);
-width: 50%;
+/* width: 50%; */
 margin: auto;
 align-self: center;
 justify-items: center;
@@ -115,15 +135,52 @@ font-weight: 700;
 .growtogether{
 flex:1;
 display: flex;
+flex-direction:row-reverse;
 padding: 20px;
-flex-direction:column;
-border: transparent;
-box-shadow: pink;
-border-radius: 10px;
+border-radius: 20px;
+border:1px solid  hsl(193, 100%, 96%);
+box-shadow:5px 5px 5px 5pxhsl(193, 100%, 96%);
+}
+.growimg{
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+.growimg img{
+    max-width: 400px;
+}
+.growtxt{
+    font-family: 'Poppins';
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+
 }
 .flowingconvo{
 display: flex;
-flex-direction: column;
+flex-direction: row;
+padding: 20px;
+border-radius: 20px;
+border:1px solid  hsl(193, 100%, 96%);
+box-shadow:5px 5px 5px 5px hsl(193, 100%, 96%);
+}
+.flowimg{
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+.flowimg img{
+    max-width: 400px;
+}
+.flowtxt{
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+
 }
 .flowingconvo div{
 padding:2em;
@@ -131,15 +188,38 @@ padding:2em;
 .yourusers{
 flex:1;
 display: flex;
-flex-direction: column;
+flex-direction: row-reverse;
 justify-items: center;
 align-items: center;
+padding: 20px;
+border-radius: 20px;
+border:1px solid  hsl(193, 100%, 96%);
+box-shadow:5px 5px 5px 5px hsl(193, 100%, 96%);
+}
+.usersimg{
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+.userstxt{
+    flex: 1;
+    width: 50%;
+    margin: 10px;
+    padding: 20px;
+}
+.yourusers img{
+    max-width: 400px;
 }
 
 .buildcommunity{
-flex: 1;
 
-border:0.5px solid gray;
+width: 50%;
+margin: auto;
+/* justify-self: center; */
+align-self: center;
+border:1px solid  hsl(193, 100%, 96%);
+box-shadow:5px 5px 5px 5px hsl(193, 100%, 96%);
 border-radius: 20px;
 height: 50%;
 padding: 10px;
@@ -147,29 +227,63 @@ padding: 10px;
 
 footer{
 background-color: hsl(192, 100%, 9%);
+
 color: white;
-display: flex;
-flex-direction: row;
 padding: 2em;
 }
+footer p{
+    font-size: 12px;
+    color: hsl(208, 11%, 55%);
+    
+}
+.foot-container{
+    display: flex;
+    flex-direction: column;
+    
+}
+.huddlelogo{
+    align-self: flex-start;
+}
+.huddlelogo img{
+    filter: brightness(1);
+}
+.contactsetc{
+    display: flex;
+    flex-direction: row;
+}
 .contact{
-display: flex;
-flex-direction: column;
+    flex: 1;
+/* display: flex;
+flex-direction: column; */
 }
 .contact img{
     max-width: 30px;
 }
-
-.aboutus p{
-text-align: start;
+.aboutus{
+    flex: 1;
+    justify-self: center;
+    align-self: flex-start;
+    
 }
+.faq{
+    flex: 1;
+    justify-self: center;
+    align-self: flex-start;
+
+}
+
 .socials{
-width: 70%;
-margin: auto;
-display: flex;
+    
+flex: 1;
+justify-self: center;
+align-self: flex-start;
 padding: 10px;
 }
 .socials img{
-max-width: 30px;
+max-width: 20px;
 padding: 10px;
+}
+.copyright{
+    flex: 1;
+    align-self: flex-end;
 }
