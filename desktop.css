@@ -1,7 +1,6 @@
 *{
     margin: 0;
-    padding: 0;
-    
+    padding: 0;    
 }
 body{
 text-align: center;
@@ -11,27 +10,34 @@ margin:20px;
 
 .mockups{
 display: flex;
-flex-direction: row;
+flex-direction: column;
 padding: 10px;
 background-image:url('./bg-hero-desktop.svg');
 
 }
 .mockups .logoside{
-    width: 50%;
+    width: 100%;
+    justify-content: space-between;
     margin: auto;
-    flex: 1;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 20px;
+    gap: 20px;
 }
-.mockups .btnimgside{
-    width: 50%;
-    margin: auto;
-    flex: 1;
+.mockups .logoside .logo{
+    justify-self: start;
+    align-self: flex-start;
+    flex:1;
+    
+    }
+.mockups .btnimgside{   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-start;
     padding: 20px;
+    margin: 10px;
 }
+
 .mockupsimg img{
     max-width: 400px;
 
@@ -44,27 +50,19 @@ border:1px solid  hsl(193, 100%, 96%);
 box-shadow:5px 5px hsl(193, 100%, 96%);
 }
 
-.logo{
-justify-self: start;
-flex:1;
-max-width: 80px;
-}
-.btntry{
-width: 50%;
+
+.mockups .logoside .btntry{
 flex:1;
 margin: 10px;
-
-align-self: flex-end;
 justify-self: flex-end;
-
-
 }
-.try{
 
+
+.try{
 background-color: white;
 color: hsl(192, 100%, 9%);
 width: 50%;
-justify-self: flex-end;
+
 border-radius: 30px;
 padding: 5px;
 font-family: 'Open Sans';
@@ -98,30 +96,6 @@ font-weight: 400;
 padding: 20px;
 align-self: center;
 }
-/* .mockups{
-flex: 1;
-display: flex;
-flex-direction: row;
-padding: 20px;
-justify-content: center;
-} */
-/* .mockups div{
-padding: 20px;
-margin:20px;
-}
-.mockupstxt{
-    flex: 1;
-    width: 50%;
-    padding: 20px;
-    margin: 10px;
-} */
-
-/* .mockupsimg{
-    flex: 1;
-    width: 50%;
-    padding: 20px;
-    margin: 10px;
-} */
 .getStarted{
 background-color: hsl(322, 100%, 66%);
 color: hsl(193, 100%, 96%);

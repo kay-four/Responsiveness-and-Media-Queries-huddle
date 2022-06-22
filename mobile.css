@@ -8,31 +8,75 @@ body{
     margin:20px;
 }
 
-.header{
+
+.mockups{
+    background-image:url('bg-hero-mobile.svg');
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+
+}
+.mockups .logoside{
     display: flex;
     flex-direction: row;
-    padding: 10px;
     justify-content: space-between;
+}
+.mockups .logoside .logo img{
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+}
+.mockups .logoside .btntry{
+    margin: 10px;
+    padding: 20px;
+    flex:1;    
+    justify-self: end;
+    align-self: center;
+
+}
+.mockups .btnimgside{
+    display:flex;
+    flex-direction: column;
+
+}
+.mockups .btnimgside .mockupsimg{
+    justify-self: center;
+    align-self: center;
+    padding: 20px;
+    margin: 10px;
     
 }
-.header, .mockups{
-    background-image:url('bg-hero-mobile.svg');
-
+.mockups .btnimgside .mockupsimg img{
+    max-width: 300px;
 }
 .therest{
+    display: flex;
+    flex-direction: column;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 20px;
     border:1px solid  hsl(193, 100%, 96%);
     box-shadow:5px 5px hsl(193, 100%, 96%);
 }
-.therest div{
+.therest .growtogether{
+    flex:1;
+    display: flex;
     padding: 20px;
-    margin: 20px;
-    border-radius: 20px;
-    border:1px solid  hsl(193, 100%, 96%);
-    box-shadow:5px 5px hsl(193, 100%, 96%);
-
+    flex-direction:column;
+    border: transparent;
+    justify-self: center;
+    text-align: center;
+    
+    border-radius: 10px;
+}
+.therest .growtogether .growimg{
+    padding: 20px;
+    margin: 10px;
+    align-self: center;
+    justify-self: center;
+}
+.therest .growtogether .growimg img{
+    max-width: 300px;
 }
 .logo{
     justify-self: start;
@@ -40,13 +84,7 @@ body{
     width: 50%;
     max-width: 80px;
 }
-.btntry{
-    width: 50%;
-    flex:1;
-    /* margin: auto; */
-    justify-self: end;
-    align-self: flex-end;
-}
+
 .try{
     
     background-color: white;
@@ -85,22 +123,10 @@ p{
     padding: 20px;
     align-self: center;
 }
-.mockups{
-    flex: 1;
-    padding: 20px;
-    justify-content: center;
-}
-.mockups div{
-    padding: 20px;
-    margin:20px;
-}
 
-img{
-    max-width:375px;
-    max-height: 200px;
-    padding:1px;
-    /* object-fit:fill; */
-}
+
+
+
 .getStarted{
     background-color: hsl(322, 100%, 66%);
     color: hsl(193, 100%, 96%);
@@ -111,54 +137,83 @@ img{
     padding: 10px;
     font-weight: 700;
 }
-.growtogether{
-    flex:1;
-    display: flex;
-    padding: 20px;
-    flex-direction:column;
-    border: transparent;
-    box-shadow: pink;
-    border-radius: 10px;
-}
+
 .flowingconvo{
     display: flex;
     flex-direction: column;
 }
-.flowingconvo div{
-    padding:2em;
+.flowingconvo .flowimg{
+    justify-self: center;
+    align-self: center;
+    margin: 10px;
+    padding: 20px;
+}
+.flowingconvo .flowimg img{
+    max-width: 300px;
 }
 .yourusers{
     flex:1;
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
+}
+.yourusers .usersimg{
+    margin: 10px;
+    padding: 20px;
+}
+.usersimg img{
+    max-width: 300px;
 }
 
 .buildcommunity{
     flex: 1;
-    
-    border:0.5px solid gray;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+        
+    border:1px solid gray;
     border-radius: 20px;
-    height: 50%;
-    padding: 10px;
+    /* height: 50%; */
+    padding: 20px;
+    margin: 10px;
+}
+.buildcommunity h2{
+    margin: 10px;
+    padding: 20px;
+}
+.buildcommunity button{
+    width: 100%;
 }
 
-footer{
+.foot-container{
     background-color: hsl(192, 100%, 9%);
     color: white;
     display: flex;
     flex-direction: column;
     padding: 2em;
+    justify-content: flex-start;
 }
 .huddlelogo{
-    width: 50px;
+    align-items: flex-start;
+    margin: auto;
+    filter:brightness(10);
+}
+.huddlelogo img{
+    max-width: 200px;
+    align-self: flex-start;
+}
+.contactsetcs{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
 }
 .contact{
     /* display: flex;
     flex-direction: column; */
-    text-align: center;
-    justify-self: center;
+    text-align: start;
+    justify-self: start;
 }
 .lorem{
     display: flex;
@@ -185,6 +240,12 @@ footer{
     justify-self: center;
 }
 .aboutus p{
+    text-align: start;
+}
+.faq{
+    justify-items: flex-start;
+}
+.faq p{
     text-align: start;
 }
 .socials{
