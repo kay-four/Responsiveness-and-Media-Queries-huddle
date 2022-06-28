@@ -1,260 +1,124 @@
 *{
-        margin: 0;
-        padding: 0;
- }
+    box-sizing: border-box;
+}
 body{
-    text-align: center;
-    padding:20px;
-    margin:20px;
-}
-
-
-.mockups{
-    background-image:url('bg-hero-mobile.svg');
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-
-}
-.mockups .logoside{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.mockups .logoside .logo img{
-    margin: 10px;
-    padding: 20px;
-    width: 100px;
-}
-.mockups .logoside .btntry{
-    margin: 10px;
-    padding: 20px;
-    flex:1;    
-    justify-self: end;
-    align-self: center;
-
-}
-.mockups .btnimgside{
-    display:flex;
-    flex-direction: column;
-
-}
-.mockups .btnimgside .mockupsimg{
-    justify-self: center;
-    align-self: center;
-    padding: 20px;
-    margin: 10px;
-    
-}
-.mockups .btnimgside .mockupsimg img{
-    max-width: 300px;
-}
-.therest{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin: 10px;
-    border-radius: 20px;
-    border:1px solid  hsl(193, 100%, 96%);
-    box-shadow:5px 5px hsl(193, 100%, 96%);
-}
-.therest .growtogether{
-    flex:1;
-    display: flex;
-    padding: 20px;
-    flex-direction:column;
-    border: transparent;
-    justify-self: center;
-    text-align: center;
-    
-    border-radius: 10px;
-}
-.therest .growtogether .growimg{
-    padding: 20px;
-    margin: 10px;
-    align-self: center;
-    justify-self: center;
-}
-.therest .growtogether .growimg img{
-    max-width: 300px;
-}
-.logo{
-    justify-self: start;
-    flex:2;
-    width: 50%;
-    max-width: 80px;
-}
-
-.try{
-    
-    background-color: white;
     color: hsl(192, 100%, 9%);
-    /* border: none; */
-    border-radius: 30px;
-    padding: 5px;
-    font-family: 'Open Sans';
-    font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.15em;
+	margin: 0;    
 }
-button{
-    border-radius: 30px;
-    border: transparent;
-    font-family: 'Open Sans',sans-serif;
-    padding: 10px;
-    width: 100%;
-    
-}
-main{
-    display: flex;
-    place-items: center;
-    flex-direction: column;
-    padding: 2em;
-}
-
-h2,h3{
-    font-family: 'Poppins',sans-serif;
-    font-weight: 600;
-    margin: 20px;
-    padding: 20px;
-}
-p{
-    font-family: 'Open Sans',sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 20px;
-    align-self: center;
-}
-
-
-
-
-.getStarted{
-    background-color: hsl(322, 100%, 66%);
-    color: hsl(193, 100%, 96%);
-    width: 50%;
-    margin: auto;
-    align-self: center;
-    justify-items: center;
-    padding: 10px;
-    font-weight: 700;
-}
-
-.flowingconvo{
-    display: flex;
-    flex-direction: column;
-}
-.flowingconvo .flowimg{
-    justify-self: center;
-    align-self: center;
-    margin: 10px;
-    padding: 20px;
-}
-.flowingconvo .flowimg img{
-    max-width: 300px;
-}
-.yourusers{
-    flex:1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.yourusers .usersimg{
-    margin: 10px;
-    padding: 20px;
-}
-.usersimg img{
-    max-width: 300px;
-}
-
-.buildcommunity{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    place-items: center;
+header{
+        background-image: url(./bg-hero-mobile.svg);
+        background-size: cover;
+        background-position: center center;
+        background-color: hsl(193, 100%, 96%);
+        padding: 40px 0
+    }
+    nav {
+        align-items: center;
+        justify-content: space-between;
         
-    border:1px solid gray;
-    border-radius: 20px;
-    /* height: 50%; */
-    padding: 20px;
-    margin: 10px;
-}
-.buildcommunity h2{
-    margin: 10px;
-    padding: 20px;
-}
-.buildcommunity button{
-    width: 100%;
-}
-
-.foot-container{
-    background-color: hsl(192, 100%, 9%);
-    color: white;
-    display: flex;
-    flex-direction: column;
-    padding: 2em;
-    justify-content: flex-start;
-}
-.huddlelogo{
-    align-items: flex-start;
-    margin: auto;
-    filter:brightness(10);
-}
-.huddlelogo img{
-    max-width: 200px;
-    align-self: flex-start;
-}
-.contactsetcs{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+.container{        
+        padding: 0 20px;
+        margin: auto;
+        max-width: 100%;
+    }
+.btn{
+        border-radius: 50px;
+        background-color: #fff;
+        border: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 700;
+        padding: 15px 15px;
+    }
+.getStarted{
+        background-color: hsl(322, 100%, 66%);
+        color: #fff;
+    }
+main{
+        display: flex;
+        place-items: center;
+        flex-direction: column;
+        padding: 2em;
+        }
+h2,h3{
+            font-family: 'Poppins',sans-serif;
+            font-weight: 600;
+            margin: 20px;
+            padding: 20px;
+            }
+            
+  
+.mockupsimg{
+        margin-top: 40px;
+        margin-left: 0;
+        width: 100%;
+    }
+.box{
+        background-color: #fff;
+        margin: 40px 0;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        
+        padding: 60px;
+    }
+.box img{
+        width: 100%;
+    }
     
-}
-.contact{
-    /* display: flex;
-    flex-direction: column; */
-    text-align: start;
-    justify-self: start;
-}
-.lorem{
-    display: flex;
-    flex-direction: row;
-}
-.lorem img{
-    justify-self: start;
-    align-self: center;
-}
-.phone{
-    display: flex;
-    flex-direction: row;
-}
-.phone img{
-    align-self: center;
-    justify-self: center;
-}
-.email{
-    display: flex;
-    flex-direction: row;
-}
-.email img{
-    align-self: center;
-    justify-self: center;
-}
-.aboutus p{
-    text-align: start;
-}
-.faq{
-    justify-items: flex-start;
-}
-.faq p{
-    text-align: start;
-}
-.socials{
-    width: 70%;
-    margin: auto;
-    display: flex;
-    padding: 10px;
-}
-.socials img{
-    max-width: 30px;
-    padding: 10px;
-}
+    
+.box .buildcommunity{
+        text-align: center;
+        display: inline-block;
+        z-index: 1;
+        margin-bottom: -50%;
+    }
+    
+.flex{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .flex > div , .flex > ul {
+        flex: 1;
+    }
+.box .flowingconvo{
+        flex-direction: column-reverse;
+    }
+footer{
+        background-color: hsl(192, 100%, 9%);
+        color: #fff;
+        padding: 180px 0 60px;
+    }
+    
+footer ul{
+    list-style-type: none;
+        padding: 0;
+        width: 100%;
+    }
+    
+ footer p{
+        text-align: start;
+    }
+    footer .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    footer .circle {
+        border: 1px solid #fff;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 10px;
+        height: 40px;
+        width: 40px;
+        text-decoration: none;
+    }
